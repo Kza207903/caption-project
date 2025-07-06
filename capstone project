@@ -1,0 +1,38 @@
+ Laptop Technology Classification using AI
+
+ Project Overview
+Proyek ini bertujuan untuk menganalisis spesifikasi laptop dan mengklasifikasikan kategori harga laptop menjadi tiga kelas: **Budget**, **Mid-range**, dan **High-End**, dengan menggunakan metode Machine Learning. Data yang digunakan berasal dari sumber publik dan dianalisis menggunakan Google Colab.
+ Dataset
+Dataset yang digunakan berisi informasi:
+- Merek laptop (`Manufacturer`)
+- RAM, Storage SSD, CPU frequency
+- Berat laptop
+- Harga (dalam USD)
+
+[Link Dataset - Laptop Price Dataset (CSV)](./laptop_pricing_dataset.csv)
+
+AI Support
+- Menggunakan algoritma **Random Forest Classifier** untuk klasifikasi laptop berdasarkan spesifikasi ke dalam kategori harga.
+- Algoritma ini dipilih karena performanya baik untuk data tabular dan interpretasinya mudah.
+- (Opsional) Jika tersedia data deskripsi/review, bisa digunakan model LLM (seperti BERT atau GPT) untuk analisis sentimen atau ringkasan.
+
+Insight & Findings
+- Laptop Budget: Harga < $700, biasanya RAM 4–8GB dan SSD 128–256GB
+- Laptop Mid-Range: Harga $700–1100, RAM 8GB, CPU 1.6–2.5GHz, SSD 256GB
+- Laptop High-End: Harga > $1100, CPU > 2.5GHz, RAM 16GB+, SSD besar
+
+Recommendations
+- Pengguna umum/kantoran cukup dengan kategori Mid-range
+- Gamer/desainer sebaiknya memilih High-end
+- Untuk mobilitas, laptop ringan dengan spesifikasi seimbang disarankan
+
+Tools Used
+- Python (Pandas, Seaborn, Scikit-Learn)
+- Google Colab
+- AI: Random Forest Classifier (ML Model)
+
+ Run Notebook
+[Google Colab Notebook – Klik di sini](./https://colab.research.google.com/drive/1HYjWJJbb5Z1mkdUWZRxEkDvqfbWyqpI0?usp=sharing)
+
+---
+
